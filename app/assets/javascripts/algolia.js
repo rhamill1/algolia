@@ -8,10 +8,11 @@ $(document).ready(function() {
 
   $('#singlebutton').on('click', function(e) {
     e.preventDefault();
+    $('#tweets').empty();
 
     var searchString = $('#textinput').serialize();
 
-    index.search(searchString.substring(10), { hitsPerPage: 100, page: 0 })
+    index.search(searchString.substring(10), { hitsPerPage: 11, page: 0 })
       .then(function searchDone(content) {
         var hitsArray = content.hits;
 
