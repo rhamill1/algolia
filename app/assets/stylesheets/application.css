@@ -14,9 +14,60 @@
  *= require_self
  */
 
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h5 {
+  margin: 0;
+}
+
+
+.march_image {
+  background-image: url('http://imgur.com/xlgDJrY.jpg');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  height: 400px;
+}
+
+.march_image h1 {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #fff;
+  text-transform: capitalize;
+  padding-top: 1em;
+  margin-left: 7em;
+}
+
+.march_image h5 {
+  font-size: 11px;
+  color: #fff;
+  text-transform: capitalize;
+  padding-top: 5px;
+  margin-left: 45em;
+}
+
+.form-group {
+  background-color: #eee;
+  padding: 1em;
+}
 
 #tweets {
-  height: 500px;
+  height: auto;
   width: 100%;
-  background-color: yellow;
+  padding: 2em 0;
+  background-color: #F7F7F7;
+}
+
+.tweet {
+  margin-left: 20em;
+  padding: 2em;
+  border-style: solid;
+  border-width: 1px;
+  margin: 1em;
+  border-radius: 5px;
+  border-color: #ddd;
+  max-width: 60%;
 }
