@@ -2,7 +2,7 @@
 $(document).ready(function() {
   console.log('app.js loaded!');
 
-  var client = algoliasearch('', '');
+  var client = algoliasearch("<%= ENV['APPLICATION_ID'] %>", "<%= ENV['SEARCH_ONLY_API_KEY'] %>");
   var index = client.initIndex('Tweet');
 
   autocomplete('#aa-search-input',
