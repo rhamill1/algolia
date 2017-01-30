@@ -39,4 +39,22 @@ $(document).ready(function() {
     }
   );
 
+
+  $(window).scroll(function() {
+
+    var windowScrollPosition = $(window).scrollTop();
+    var marginTopValue = 400 - (windowScrollPosition / 2)
+    var marginTopString = marginTopValue + 'px'
+
+    if (windowScrollPosition < 470){
+      $('.form-group').css('margin-top', marginTopString);
+      $('.march_image').css('height', marginTopString);
+    } else {
+      $('.form-group').css('margin-top', '167px');
+      $('.march_image').css('height', '167px');
+    }
+
+  });
+
+
 });
