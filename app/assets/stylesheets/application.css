@@ -26,10 +26,10 @@ h1, h5 {
 
 .march_image {
   background-image: url('http://imgur.com/xlgDJrY.jpg');
-  background-repeat: no-repeat;
-  background-attachment:fixed;
   height: 400px;
-  z-index: -2;
+  z-index: 30;
+  position: fixed;
+  width: 100%;
 }
 
 .march_image h1 {
@@ -71,7 +71,9 @@ h1, h5 {
   padding: 1em;
   height: 2em;
   z-index: 10;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  margin-top: 400px;
 }
 
 
@@ -127,10 +129,10 @@ h1, h5 {
   min-height: 300px;
   height: auto;
   width: 100%;
-  padding: 2em 0;
+  padding: 470px 0 2em 0;
   background-color: #F7F7F7;
   text-align: center;
-  z-index: 100;
+  z-index: 1;
   position: relative;
 }
 
